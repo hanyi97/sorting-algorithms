@@ -1,12 +1,28 @@
-"""Divide into 2 sub lists. Sorted and unsorted
-A little faster than bubble and selection sort
+"""Divide into 2 parts. Sorted and unsorted.
+Every iteration will remove an element from unsorted part and insert 
+into sorted part with the correct position.
 
 1. Sorted list will start with 1 item
 2. Take first item of unsorted list and insert into sorted list
 3. Compare inserted item to the immediate left item
 4. Swap position if smaller than left item
 
+Advantages:
+- A little faster than bubble and selection sort
+- Good performance with small list
+- Minimal space requirement
+
+Disadvantages:
+- - Poor performance when dealing with huge list of items
+
+Time Complexity:
+- Worst Case: O(n^2)
+- Best Case: O(n)
+- Average Case: O(n^2)
+
 Example [5, 3, 8, 6, 7, 2]:
+[5 | 3, 8, 6, 7, 2]
+
 When i = 1:
 [5, 3 | 8, 6, 7, 2]
 Swap: [3, 5 | 8, 6, 7, 2]
