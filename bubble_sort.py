@@ -6,9 +6,10 @@ Advantages:
 Disadvantages:
 - Consumes more CPU power
 
-Worst Case: O(n^2)
-Best Case: O(n) (optimised code) / O(n^2) (current implementation)
-Average Case: O(n^2)
+Time Complexity:
+- Worst Case: O(n^2)
+- Best Case: O(n) (optimised) / O(n^2) (standard)
+- Average Case: O(n^2)
 
 Example [5, 3, 8, 6, 7, 2]:
 When i = 5:

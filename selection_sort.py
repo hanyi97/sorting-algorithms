@@ -1,5 +1,16 @@
 """Get the minimum value of unsorted array and swap value to the front
 
+Advantages:
+- Performs well on small lists
+
+Disadvantages:
+- Poor efficiency when dealing with huge list of items
+
+Time Complexity:
+- Worst Case: O(n^2)
+- Best Case: O(n^2)
+- Average Case: O(n^2)
+
 Example [5, 3, 8, 6, 7, 2]:
 When i = 0, min_index = 0 (5):
 j = 0: "
@@ -8,7 +19,7 @@ j = 2: "
 j = 3: "
 j = 4: "
 j = 5: min_index = 5 (2)
-Swap 5 and 2: [2, 3, 8, 6, 7, 5]
+Swap number 5 and 2: [2, 3, 8, 6, 7, 5]
 
 When i = 1, min_index = 1 (3):
 j = 1: "
@@ -23,7 +34,7 @@ j = 2: "
 j = 3: min_index = 3 (6)
 j = 4: "
 j = 5: min_index = 5 (5)
-Swap 8 and 5: [2, 3, 5, 6, 7, 8]
+Swap number 8 and 5: [2, 3, 5, 6, 7, 8]
 
 When i = 3, min_index = 3 (6)
 j = 3: "
