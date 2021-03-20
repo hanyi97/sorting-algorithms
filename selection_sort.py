@@ -1,8 +1,9 @@
-"""Get the minimum value of unsorted array and swap value to the front
-Typically executes faster than Bubble Sort
+"""Get the minimum value of unsorted array and swap value to the front.
+Divides the array into two parts. Sorted and unsorted.
 
 Advantages:
 - Performs well on small lists
+- Typically executes faster than Bubble Sort
 
 Disadvantages:
 - Poor efficiency when dealing with huge list of items
