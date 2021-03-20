@@ -1,6 +1,18 @@
-"""Break list into halves and merge the smaller halves, and merge them back together
-Efficient for large data sets
-Recursive function
+"""Break list into halves and merge the smaller halves, and merge them back together.
+Divide and conquer using recursive function
+
+Advantages:
+- Efficient for large data sets
+- Stable sorting algorithm
+
+Disadvantages:
+- Not as space efficient
+- Slightly slower than quick sort
+
+Time Complexity:
+- Worst Case: O(nlog(n))
+- Best Case: O(nlog(n))
+- Average Case: O(nlog(n))
 
 Example: [5, 3, 8, 6, 7, 2]
 Split: [5, 3, 8] [6, 7, 2]

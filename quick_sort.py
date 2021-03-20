@@ -1,9 +1,27 @@
 """Uses a partition and pivot points
 Fastest sorting algorithm
-Recursion function
+Divide and conquer with recursive function
 
-1. Take last item as pivot point
-2. Place items smaller than pivot to the left and larger items to the right
+1. Take last/first item as pivot point
+2. Partition list by placing items smaller than pivot to the left and larger items to the right
+
+Advantages:
+- Regarded as best sorting algorithm
+- Significant efficiency advantage on large lists
+- No additional storage required
+
+Disadvantages:
+- Worst case similar to average performances of the bubble, insertion or selections sorts.
+
+Time Complexity:
+Worst Case: O(n^2)
+Best Case: O(nlog(n))
+Average Case: O(nlog(n))
+
+Solve worst case by choosing:
+1. A random index for pivot
+2. Middle index of partition for the pivot
+3. Median of first, middle and last partition for the pivot
 
 Example [5, 3, 8, 6, 7, 2]
 Pivot = 2:
