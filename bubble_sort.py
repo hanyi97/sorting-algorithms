@@ -1,5 +1,14 @@
-"""Sort by swapping values
-Consumes more CPU power
+"""Bubble Sort compares all the element one by one and sort them based on their values.
+
+Advantages:
+- Easy to implement
+
+Disadvantages:
+- Consumes more CPU power
+
+Worst Case: O(n^2)
+Best Case: O(n) (optimised code) / O(n^2) (current implementation)
+Average Case: O(n^2)
 
 Example [5, 3, 8, 6, 7, 2]:
 When i = 5:
@@ -30,6 +39,7 @@ j = 0: [2, 3, 5, 6, 7, 8]
 
 
 def sort(arr):
+    """Standard O(n^2)"""
     # Loop from back
     for i in range(len(arr) - 1, 0, -1):
         # Loop until i-1
@@ -39,3 +49,26 @@ def sort(arr):
                 temp = arr[j]
                 arr[j] = arr[j + 1]
                 arr[j + 1] = temp
+
+def optimised_sort(arr):
+    """Optimised best case O(n)"""
+    n = len(arr) 
+    # Traverse through all array elements 
+    for i in range(n): 
+        swapped = False
+  
+        # Last i elements are already 
+        # in place 
+        for j in range(0, n-i-1): 
+            # traverse the array from 0 to 
+            # n-i-1. Swap if the element  
+            # found is greater than the 
+            # next element 
+            if arr[j] > arr[j+1] : 
+                arr[j], arr[j+1] = arr[j+1], arr[j] 
+                swapped = True
+
+        # IF no two elements were swapped 
+        # by inner loop, then break 
+        if swapped == False: 
+            break
