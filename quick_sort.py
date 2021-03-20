@@ -1,5 +1,4 @@
 """Uses a partition and pivot points
-Fastest sorting algorithm
 Divide and conquer with recursive function
 
 1. Take last/first item as pivot point
