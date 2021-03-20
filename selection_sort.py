@@ -1,4 +1,5 @@
 """Get the minimum value of unsorted array and swap value to the front
+Typically executes faster than Bubble Sort
 
 Advantages:
 - Performs well on small lists
