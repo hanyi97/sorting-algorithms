@@ -11,6 +11,7 @@ Advantages:
 - A little faster than bubble and selection sort
 - Good performance with small list
 - Minimal space requirement
+- Stable
 
 Disadvantages:
 - - Poor performance when dealing with huge list of items

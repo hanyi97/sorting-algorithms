@@ -7,6 +7,7 @@ Advantages:
 
 Disadvantages:
 - Poor efficiency when dealing with huge list of items
+- Not stable
 
 Time Complexity:
 - Worst Case: O(n^2)
